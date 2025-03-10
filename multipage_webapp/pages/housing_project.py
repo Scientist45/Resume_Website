@@ -76,7 +76,7 @@ index_df.head()
 )
 
 #read in national price index dataset
-index_df =pd.read_csv('CSUSHPINSA.csv')
+index_df =pd.read_csv('multipage_webapp/CSUSHPINSA.csv')
 #change to date type values
 index_df['DATE'] = pd.to_datetime(index_df['DATE'])
 st.write(index_df.head())
@@ -95,7 +95,7 @@ inf_df.head()
 )
 
 #read in national price index dataset (inflation adjusted)
-inf_df = pd.read_csv('fredgraph.csv')
+inf_df = pd.read_csv('multipage_webapp/fredgraph.csv')
 #change to date type values
 inf_df['DATE'] = pd.to_datetime(inf_df['DATE'])
 st.write(inf_df.head())
@@ -180,7 +180,7 @@ df.head()
         language="python",)
 
 #Read in zillow home prices
-df=pd.read_csv('Metro_median_sale_price_uc_sfrcondo_month.csv')
+df=pd.read_csv('multipage_webapp/Metro_median_sale_price_uc_sfrcondo_month.csv')
 st.write(df.head())
 
 st.code(
@@ -502,7 +502,7 @@ df_invt.head()
         language="python",)
 
 #Read in zillow home inventory dataset
-df_invt=pd.read_csv('Metro_invt_fs_uc_sfrcondo_month.csv')
+df_invt=pd.read_csv('multipage_webapp/Metro_invt_fs_uc_sfrcondo_month.csv')
 st.write(df_invt.head())
 
 st.code(
@@ -689,7 +689,7 @@ df_pending.head()
         """,
         language="python") 
 
-df_pending=pd.read_csv('Metro_med_doz_pending_uc_sfrcondo_month.csv')
+df_pending=pd.read_csv('multipage_webapp/Metro_med_doz_pending_uc_sfrcondo_month.csv')
 st.write(df_pending.head())
 
 st.write(
@@ -746,7 +746,7 @@ df_pending=pd.read_csv('df_pending_coordinates.csv')
         language="python") 
 
 #load in csv file
-df_pending=pd.read_csv('df_pending_coordinates.csv')
+df_pending=pd.read_csv('multipage_webapp/df_pending_coordinates.csv')
  
 st.write(
     """

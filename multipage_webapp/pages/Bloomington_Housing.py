@@ -32,7 +32,7 @@ financial strain.
 
 st.subheader("Data:")
 
-data = gpd.read_file("reduced_location_affordability.gpkg")
+data = gpd.read_file("multipage_webapp/reduced_location_affordability.gpkg")
 
 st.code(
     """

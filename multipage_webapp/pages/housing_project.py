@@ -772,7 +772,7 @@ df_pending.head()
         language="python") 
     
 # Create City and State columns from the RegionName column
-df_pending[['City', 'State']] = df_pending['RegionName'].str.split(',', 1, expand=True)
+df_pending[['City', 'State']] = df_pending['RegionName'].str.split(',', expand=True)
 #remove RegionName column
 df_pending.drop('RegionName', axis=1, inplace=True) 
 #remove State column
